@@ -2,7 +2,9 @@
 This bot is a simple Discord Slash Bot.
 
 # Setup
-Open the `config.json` file and write your token.
+1. Open the `config.json` file and write your token.
+2. And add bot your server.
+3. `https://discord.com/oauth2/authorize?client_id=YOURBOTID&scope=applications.commands`
 
 # Types
 ```
