@@ -20,5 +20,4 @@ ROLE	                    8
 # 📚 Contact
 > You want to help us develop this project? [Then give us an idea!](https://github.com/muratvastark/discord-slash-bot/issues)
 
-## discord.gg/serendia
 ## Discord: `Muratva Stark#0001`
