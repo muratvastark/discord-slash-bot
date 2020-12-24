@@ -11,5 +11,10 @@ module.exports = {
 	],
 	async execute(bot, interaction, args) {
 		await bot.say(interaction, args[0].value);
+		/*
+			Embed Usage:
+			const { MessageEmbed } = require("discord.js");
+			await bot.say(interaction, new MessageEmbed().setDescription(args[0].value));
+		*/
 	}
 };
