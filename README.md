@@ -7,8 +7,8 @@ Open the `config.json` file and write your token.
 # Types
 ```
 NAME	                VALUE
-SUB_COMMAND	                1
-SUB_COMMAND_GROUP	        2
+SUB_COMMAND	             1
+SUB_COMMAND_GROUP	     2
 STRING	                    3
 INTEGER	                    4
 BOOLEAN	                    5
