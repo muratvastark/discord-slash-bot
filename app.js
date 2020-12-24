@@ -35,15 +35,3 @@ async function createAPIMessage(interaction, content) {
 	const apiMessage = await Discord.APIMessage.create(Bot.channels.resolve(interaction.channel_id), content).resolveData().resolveFiles();
 	return { ...apiMessage.data, files: apiMessage.files };
 }
-
-/* TYPES:
-    NAME	                VALUE
-    SUB_COMMAND	                1
-    SUB_COMMAND_GROUP	        2
-    STRING	                    3
-    INTEGER	                    4
-    BOOLEAN	                    5
-    USER	                    6
-    CHANNEL	                    7
-    ROLE	                    8
-*/
