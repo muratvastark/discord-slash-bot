@@ -14,10 +14,10 @@ Bot.once("ready", () => {
 				options: File.options
 			}
 		});
-		Bot.ws.on("INTERACTION_CREATE", (interaction) => {
-			if (interaction.data.name.toLowerCase() === File.name.toLowerCase()) File.execute(Bot, interaction, interaction.data.options);
-		});
 	}
+	Bot.ws.on("INTERACTION_CREATE", (interaction) => {
+		if (interaction.data.name.toLowerCase() === File.name.toLowerCase()) File.execute(Bot, interaction, interaction.data.options);
+	});
 });
 
 Bot.login(Config.Token).catch(console.error);
