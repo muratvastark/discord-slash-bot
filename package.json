@@ -5,7 +5,8 @@
 	"main": "app.js",
 	"scripts": {
 		"format": "prettier --write .",
-		"start": "node app.js"
+		"start": "node app",
+		"dev": "nodemon"
 	},
 	"keywords": [
 		"discord",
@@ -19,6 +20,7 @@
 		"dotenv": "^8.2.0"
 	},
 	"devDependencies": {
+		"nodemon": "^2.0.6",
 		"prettier": "^2.2.1"
 	}
 }

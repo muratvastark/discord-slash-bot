@@ -7,11 +7,11 @@ const cmdFiles = readdirSync("./commands").filter((file) =>
 	file.endsWith(".js"),
 );
 
-async function Bootstrap() {
+Bot.on("ready", async () => {
 	for (const fileName of cmdFiles) {
 		const File = require(`./commands/${fileName}`);
 		Commands.push(File);
-		await Bot.api.applications(Config.bot_id).commands.post({
+		await Bot.api.applications(Bot.user.id).commands.post({
 			data: {
 				name: File.name,
 				description: File.description,
@@ -19,10 +19,8 @@ async function Bootstrap() {
 			},
 		});
 	}
-	await Bot.login(Config.token);
-}
-
-Bot.on("ready", async () => console.info(`Logged in as ${Bot.user.username}`));
+	console.info(`Logged in as ${Bot.user.username}`);
+});
 
 Bot.ws.on("INTERACTION_CREATE", (interaction) => {
 	const CMDFile = Commands.find(
@@ -32,7 +30,7 @@ Bot.ws.on("INTERACTION_CREATE", (interaction) => {
 		CMDFile.execute(Bot, say, interaction, interaction.data.options);
 });
 
-Bootstrap();
+Bot.login(Config.token);
 
 async function say(interaction, content) {
 	return Bot.api

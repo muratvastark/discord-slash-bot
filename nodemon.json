@@ -1,0 +1,4 @@
+{
+	"ext": "js,json",
+	"exec": "npm run start"
+}
