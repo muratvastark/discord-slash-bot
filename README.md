@@ -1,26 +1,32 @@
-# discord-slash-bot
+# Discord Slash Bot
+
 This bot is a simple Discord Slash Bot.
 
 # Setup
-1. Open the `config.json` file and write your token.
-2. And add bot your server.
-3. `https://discord.com/oauth2/authorize?client_id=YOURBOTID&scope=applications.commands`
-4. Run `app.js` file.
+
+1. Clone repo
+2. Install dependencies with command `npm install` or `yarn`
+3. Rename `.env.example` as `.env` and fill required blanks
+4. Add bot to your server with this invite `https://discord.com/oauth2/authorize?client_id=YOUR_BOTS_CLIENT_ID&scope=applications.commands`
+5. Run `yarn start` or `npm run start` for production server, run `yarn dev` or `npm run dev` for development server.
 
 # Types
-```
-NAME	                VALUE
-SUB_COMMAND	            1
-SUB_COMMAND_GROUP	    2
-STRING	                    3
-INTEGER	                    4
-BOOLEAN	                    5
-USER	                    6
-CHANNEL	                    7
-ROLE	                    8
-```
+
+| NAME              | VALUE |
+| ----------------- | ----- |
+| SUB_COMMAND       | 1     |
+| SUB_COMMAND_GROUP | 2     |
+| STRING            | 3     |
+| INTEGER           | 4     |
+| BOOLEAN           | 5     |
+| USER              | 6     |
+| CHANNEL           | 7     |
+| ROLE              | 8     |
+
+# 🎉 Contributing
+
+-   Feel free to use Githubs features
 
 # 📚 Contact
-> You want to help us develop this project? [Then give us an idea!](https://github.com/muratvastark/discord-slash-bot/issues)
 
-## Discord: `Muratva Stark#0001`
+Discord: `Muratva Stark#0001`
