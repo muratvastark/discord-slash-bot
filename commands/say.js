@@ -6,15 +6,10 @@ module.exports = {
 			name: "Text",
 			description: "You can print something on the bot.",
 			type: 3,
-			required: true
-		}
+			required: true,
+		},
 	],
-	async execute(bot, interaction, args) {
-		await bot.say(interaction, args[0].value);
-		/*
-			Embed Usage:
-			const { MessageEmbed } = require("discord.js");
-			await bot.say(interaction, new MessageEmbed().setDescription(args[0].value));
-		*/
-	}
+	async execute(_bot, say, interaction, args) {
+		await say(interaction, args[0].value);
+	},
 };
