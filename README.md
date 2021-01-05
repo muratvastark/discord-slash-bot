@@ -17,7 +17,7 @@
 4. Add bot to your server with this invite `https://discord.com/oauth2/authorize?client_id=YOUR_BOTS_CLIENT_ID&scope=applications.commands`
 5. Run `yarn start` or `npm run start` for production server, run `yarn dev` or `npm run dev` for development server.
 
-# 🎈 Types (For Developers)
+## 🎈 Types (For Developers)
 
 | NAME              | VALUE |
 | ----------------- | ----- |
