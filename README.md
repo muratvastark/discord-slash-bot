@@ -34,7 +34,7 @@
 
 👤 **Muratva Stark**
 
-* Discord: https://discord.com/users/470974660264067072
+* Discord: [Muratva Stark](https://discord.com/users/470974660264067072)
 * Github: [@muratvastark](https://github.com/muratvastark)
 
 ## 🤝 Contributing
