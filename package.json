@@ -11,7 +11,8 @@
 	"keywords": [
 		"discord",
 		"discord.js",
-		"discord slash commands"
+		"discord slash commands",
+		"discord-bot"
 	],
 	"author": "Muratva Stark",
 	"license": "MIT",
